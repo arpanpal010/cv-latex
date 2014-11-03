@@ -1,0 +1,162 @@
+%requires packages: moderncv fontawesome
+
+\documentclass[12pt, a4paper, sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\moderncvicons{awesome} % options awesome / marvosym / letters
+
+\usepackage{fontspec}
+\setmainfont{Liberation Sans}[Scale=MatchLowercase]
+\setsansfont{DejaVu Sans}[Scale=MatchLowercase]
+
+%\usepackage{inputenc} % character encoding utf8%
+%\usepackage{fontenc} % font encoding
+%\usepackage{fullpage}
+%\usepackage{color}
+\usepackage[margin=1.5cm, vmargin=1.5cm]{geometry}
+
+\usepackage{syntonly} %enable when  checking syntax
+%\syntaxonly
+
+%\nopagenumbers % remove page number - single page cv
+%pagenumber in <c>enter <foot>er
+\pagestyle{fancy} % page numbering - set empty to remove
+\cfoot{\vspace{-0.3em} \color{color2} \small Resumé --- Arpan Pal: \thepage{} of 2} %\pageref{LastPage}}} %does not work without lastpage.sty specify maximum page
+
+%info
+\firstname{Arpan} \lastname{Pal}
+\title{ }
+\quote{ }
+\address{\faHome{} (Omitted}{because this is}{}
+\email{arpan.pal010@gmail.com}
+\homepage{arpanpal010.github.io}
+\phone[mobile]{the Internet)}
+\social[github]{arpanpal010}
+\social[linkedin]{arpanpal010}
+\social[twitter]{arpanpal010}
+
+\AtBeginDocument{\recomputelengths}
+
+\begin{document}
+\makecvtitle{}
+%
+\vspace{-6em} % pull objective up because too much gap
+%
+%Objective
+	\section{Objective}
+		\cvline{}{Seeking an opportunity to utilize my skills and abilities in the industry within a \linebreak
+					competitive environment along with true professionals, to put in the acquired knowledge and
+					gain exposure to upcoming technologies while being resourceful, innovative and flexible.
+				}
+%
+%Skills
+	\section{Skills}
+		%\cvline
+		\cvline{\color{color2}Languages}{Python, Shellscript, Java, HTML$\sim$CSS$\sim$Javascript}
+		\cvline{\color{color2}Technologies}{Django, SQLite, MariaDB, Nginx, Uwsgi, Foundation, Git}
+		\cvline{\color{color2}Familiar with}{OOP, MVC, \{I \cdotp{} P \cdotp{} S\}aaS, Virtualization, Networking, REST, Responsive Design,
+						Amazon EC2 \slash{} EMR \slash{} S3, Boto, Bootstrap, OpenVPN, Mercurial, Heroku, \LaTeX, Markdown
+						}
+		\cvline{\color{color2}Environment \slash{} IDE}{Vim, Eclipse, NetBeans, Sublime Text 2}
+		\cvline{\color{color2}OS}{Several GNU/Linux server and desktop distros \slash{} Windows XP$\sim$7$\sim$8.1 \slash{} OSX \slash{} FreeBSD}
+		\vspace{0.6em}
+		\cvline{}{Ability to develop and deploy scalable apps in cloud.}
+		\cvline{}{Ability to administrate, manage and maintain client-server technologies.}
+		\cvline{}{Proficient in Office Suites, and Adobe Photoshop.}
+		\cvline{}{Excellent attention to organization and detail as well as time management.}
+		\cvline{}{Strong technical, analytical and decision making skills for problem identification and resolution.}
+		\cvline{}{Adept at multi-tasking and learning new languages and/or procedures quickly.}
+		\cvline{}{Can be a team player as well as work independently/remotely.}
+		\cvline{}{Can solve a Rubik's Cube under 01:30 minutes.}
+		\cvline{}{Can play the Bass and Acoustic guitar.}
+%
+%Personal
+	\section{Personal}%{Interests}
+		\cvline{\color{color1}Interests}{Cloud computing, Operating system architectures, Task and transaction automation, Machine learning,
+						Deep learning, Data Mining
+					}
+		\cvline{\color{color2}Communication}{English, Bengali, Hindi}
+%
+%Projects
+	\section{Projects}
+		\cvline{\fontsize{8}{10}\color{lightgray}\faPlus}
+					{\link[ArchInst]{https://github.com/arpanpal010/archinst} - Command-line installer (Shellscript) for Arch
+						Linux that bootstraps, installs and configures a usable system from scratch with minimum hassle.
+					}
+		\cvline{\fontsize{8}{10}\color{lightgray}\faPlus}
+					{\link[Multi-boot USB]{https://github.com/arpanpal010/mbusb} - Booting multiple (14 as of \today)
+						Linux based OS(s) from a single usb key.
+					}
+		\cvline{\fontsize{8}{10}\color{lightgray}\faPlus}
+					{\link[Set-based Similarity Measurement and Ranking Model to Identify Cases of Journalistic Text Reuse]
+						{https://arpanpal010.github.io/docs/2013-clinss-Pal-Surrey.pdf} (MSc. Dissertation) secured
+						\emph{3rd place} by organization in \link[\underline{C}ross-\underline{L}anguage \underline{!}ndian \underline{N}ews
+						\underline{S}tory \underline{S}earch@FIRE'13 task.]
+						{http://users.dsic.upv.es/grupos/nle/clinss.html}
+					}
+		\cvline{\fontsize{8}{10}\color{lightgray}\faPlus}
+					{\link[Scalable Non-Obfuscated Plagiarism (Textual) Detection App]
+						{https://arpanpal010.github.io/docs/clopladetsys.pdf}
+						combining technologies of AmazonEC2, Openstack, and Google App Engine.
+					}
+		\cvline{\fontsize{8}{10}\color{lightgray}\faPlus}
+					{Knowledge based movie ranking engine using Neural Network(Numpy) written in Python2}
+		\cvline{\fontsize{8}{10}\color{lightgray}\faPlus}
+					{Web Based Student Information Management Interface in Deluge script using Zoho Cloud Creator.}
+		\cvline{\fontsize{8}{10}\color{lightgray}\faPlus}
+					{Web SMS Gateway using WAMP Server and WayToSMS backend.}
+		\cvline{\fontsize{8}{10}\color{lightgray}\faPlus}
+					{Prototype of an online banking/accounts management software in JDK6.}
+%
+%Education
+	\section{Education}
+%MSc
+		\cventry{\color{color1}{2012---13}}{MSc. Internet Computing}{\link[University of Surrey]{http://www.surrey.ac.uk/}}{Guildford, UK}{\textit{64.6\%}}{}
+			\vspace{-0.5em}
+			\begin{cvcolumns}
+				\cvcolumn[0.455555]{\small{Courseworks included \guillemotright}}
+					{Cloud Computing (70\%) \\
+						Computing Ethics (64\%) \\
+						Collective Intelligence (76\%) \\
+						Enterprise Systems Development \\
+					}
+				\cvcolumn{}
+					{Database and Knowledge Discovery (71\%) \\
+						Web Hacking and Countermeasures (62\%) \\
+						Network Technologies and Security (61\%) \\
+						Information Security Management \\
+					}
+			\end{cvcolumns}
+%
+		\vspace{-1em}
+%BCA
+		\cventry{\color{color2}{2008---11}}{Bachelor in Computer Application}{\link[The Heritage Academy]{http://www.theheritageacademy.in/}}{Kolkata}{\textit{8.09 (CGPA)}}{}
+			\vspace{-0.5em}
+			\begin{cvcolumns}
+				\cvcolumn[0.32]{\small{Courseworks included \guillemotright}}
+					{Computer Architecture \\
+						Digital Electronics \\
+						Unix Shellscripting \\
+						Database Management \\
+					}
+				\cvcolumn{}
+					{Data structure and OOP(Java) \\
+						Information System Analysis and Design\\
+						Data Communication and Computer Networks \\
+						Programming Mathematics and Numerical Algorithms \\
+					}
+			\end{cvcolumns}
+%
+		\vspace{-1em}
+%School
+		\cventry{\color{color2}{2006---08}}{Higher Secondary Examinations (A-Levels Eqv.)}{Krishnapur Adarsha Vidyamandir}{}{\textit{68.4\%}}{}
+			\cvline{}{Stream: Science}
+			\cventry{\color{color2}{1996---06}}{Secondary Examinations (GCSE Eqv.)}{Krishnapur Adarsha Vidyamandir}{Kolkata}{\textit{79.25\%}}{}
+%
+	\vspace{2em}
+%References
+	\hspace{3em}\bfseries{References available on request.}
+
+%PDF version: https://arpanpal010.github.io/docs/cvArpanPal.pdf}
+\end{document}
